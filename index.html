@@ -36,54 +36,56 @@
 	  </style>
    </head>
    <body>
-		<div class="container">
+		<div class="container" itemscope itemtype="http://schema.org/EducationalOrganization">
 			<div class="row">
 				<div class="twelve column jumbo">
-				   <h1 class="primary-title">Open NCU</h1>
+				   <h1 class="primary-title" itemprop="name">Open NCU</h1>
+				   <meta itemprop="foundingDate" content="2014-08-01"/>
+				   <meta itemprop="subOrganization" content="National Central University Computer Center"/>
 				</div>
 			 </div>
-			<div class="row project">
+			<div class="row project" itemscope itemtype="http://schema.org/WebSite">
 				<div class="one-half column screenshot-column">
-					<a class="screenshot-wrapper" target="_blank" href="https://github.com/NCU-CC/API-Documentation">
-					  <img class="screenshot" src="images/ncu-api.png" alt="NCU API">
+					<a class="screenshot-wrapper" target="_blank" href="https://github.com/NCU-CC/API-Documentation" itemprop="url">
+					  <img class="screenshot" src="images/ncu-api.png" alt="NCU API" itemprop="image">
 					</a>
 				</div>
 				<div class="one-half column intro">
-				   <h4>NCU API</h4>
-				   <p>We provide variety of APIs about NCU, even personal information via NCU OAuth.</p>
+				   <h4 itemprop="name">NCU API</h4>
+				   <p itemprop="description">We provide variety of APIs about NCU, even personal information via NCU OAuth.</p>
 				</div>
 			 </div>
-			 <div class="row project">
+			 <div class="row project" itemscope itemtype="http://schema.org/WebSite">
 				<div class="one-half column screenshot-column">
-					<a class="screenshot-wrapper" target="_blank" href="http://api.cc.ncu.edu.tw/manage">
-					  <img class="screenshot" src="images/ncu-oauth.png" alt="NCU OAUth">
+					<a class="screenshot-wrapper" target="_blank" href="http://api.cc.ncu.edu.tw/manage" itemprop="url">
+					  <img class="screenshot" src="images/ncu-oauth.png" alt="NCU OAUth" itemprop="image">
 					</a>
 				</div>
 				<div class="one-half column intro">
-				   <h4>NCU OAuth</h4>
-				   <p>A web interface for NCU OAuth and NCU API. Users are able to check or revoke permissions and developers could register clients to get tokens to access NCU API.</p>
-				   </div>
+				   <h4 itemprop="name">NCU OAuth</h4>
+				   <p itemprop="description">A web interface for NCU OAuth and NCU API. Users are able to check or revoke permissions and developers could register clients to get tokens to access NCU API.</p>
+				</div>
 			 </div>
-			 <div class="row project">
+			 <div class="row project" itemscope itemtype="http://schema.org/WebSite">
 				<div class="one-half column screenshot-column">
-					<a class="screenshot-wrapper" target="_blank" href="https://appstore.cc.ncu.edu.tw/appstore">
-					  <img class="screenshot" src="images/appstore.png" alt="NCU App Store">
+					<a class="screenshot-wrapper" target="_blank" href="https://appstore.cc.ncu.edu.tw/appstore" itemprop="url">
+					  <img class="screenshot" src="images/appstore.png" alt="NCU App Store" itemprop="image">
 					</a>
 				</div>
 				<div class="one-half column intro">
-				   <h4>NCU App Store</h4>
-				   <p>A platform exhibit apps or services developed by NCU members.</p>
+				   <h4 itemprop="name">NCU App Store</h4>
+				   <p itemprop="description">A platform exhibit apps or services developed by NCU members.</p>
 				</div>
 			 </div>
-			 <div class="row project">
+			 <div class="row project" itemscope itemtype="http://schema.org/WebSite">
 				<div class="one-half column screenshot-column">
-					<a class="screenshot-wrapper" target="_blank" href="https://github.com/NCU-CC">
-					  <img class="screenshot" src="images/repo.png" alt="Open NCU repositories">
+					<a class="screenshot-wrapper" target="_blank" href="https://github.com/NCU-CC" itemprop="url">
+					  <img class="screenshot" src="images/repo.png" alt="Open NCU repositories" itemprop="image">
 					</a>
 				</div>
 				<div class="one-half column intro">
-				   <h4>Repositories</h4>
-				   <p>Most of our projects are under open-source, including api services, android apps and web applications.</p>
+				   <h4 itemprop="name">Repositories</h4>
+				   <p itemprop="description">Most of our projects are under open-source, including api services, android apps and web applications.</p>
 				</div>
 			 </div>
 			 <div class="row project">
@@ -94,19 +96,36 @@
 				</div>
 				<div class="one-half column intro">
 				   <h4>Proposal</h4>
-				   <p>Any ideas? Show yourself, let's make NCU better together.</p>
+				   <p>We need your ideas, let's make NCU better together.</p>
 				</div>
 			 </div>
 			<div class="row project">
 				<div class="twelve column">
-					<h4>Contributors</h4>
+					<h5>Contributors</h5>
 					<p>
-						@turlay2009,
-						<a href="https://github.com/yyc1217" target="_blank">@yyc1217</a>,
-						<a href="https://github.com/jason1122g" target="_blank">@jason1122g</a>,
-						<a href="https://github.com/c910335" target="_blank">@c910335</a>,
-						<a href="https://github.com/xxx663xxx" target="_blank">@xxx663xxx</a>,
-						<a href="https://github.com/JackSie" target="_blank">@JackSie</a>.
+						<span itemprop="member" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name">turlay2009</span>,
+						</span>
+						<span itemprop="member" itemscope itemtype="http://schema.org/Person">
+							<a href="https://github.com/yyc1217" target="_blank" itemprop="url">yyc1217</a>,
+						</span>
+						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+							<a href="https://github.com/jason1122g" target="_blank" itemprop="url">jason1122g</a>,
+						</span>
+						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+							<a href="https://github.com/c910335" target="_blank" itemprop="url">c910335</a>,
+						</span>
+						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+							<a href="https://github.com/xxx663xxx" target="_blank" itemprop="url">xxx663xxx</a>,
+						</span>
+						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+							<a href="https://github.com/JackSie" target="_blank">JackSie</a>.
+						</span>
+					</p>
+					
+					<h5>Contact Us</h5>
+					<p>
+						<span itemprop="email">mobile@cc.ncu.edu.tw</span>
 					</p>
 				</div>
 			</div>
@@ -121,5 +140,5 @@
   ga('send', 'pageview');
 
 </script>
-   </body>
+</body>
 </html>
