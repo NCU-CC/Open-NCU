@@ -13,17 +13,22 @@
    </head>
    <body>
 	<h6><a href="./index.html">回首頁</a></h6>
-      <div class="container">
+      <div class="container" itemscope itemtype="http://schema.org/CollegeOrUniversity">
 	  	<div class="row">
             <div class="twelve column jumbo">
-				<h2>國立中央大學電子計算機中心</h2>
+				<h2 itemprop="name">國立中央大學電子計算機中心</h2>
 				<h4>智慧型裝置應用程式提案說明</h4>
 				
 				<h5>目的</h5>
 				<p>本提案說明旨在邀集國立中央大學有能力完成智慧型裝置應用程式的在學學生，開發出適合教職員生使用的應用程式，提供良好的行動應用體驗，同時增加學生的工讀機會，亦增加實作的經驗。</p>
 
 				<h5>提案方式</h5>
-				<p>提案人請依照下方提案範例完成提案文件後，寄給電子計算機中心<a href="mailto:mobile@cc.ncu.edu.tw">行動應用程式開發小組組長</a>。</p>
+				<p itemprop="department" itemscope itemtype="http://schema.org/EducationalOrganization">
+					提案人請依照下方提案範例完成提案文件後，寄給電子計算機中心
+						<a href="mailto:mobile@cc.ncu.edu.tw" itemprop="email">
+							<span itemprop="name">行動應用程式開發小組</span>組長
+						</a>。
+				</p>
 				<p>接下來進入資料審核程序，若核可後將會約時間討論提案內容，最後議價簽約，契約成立後即行開發。</p>
 
 				<h5>注意事項</h5>
@@ -34,7 +39,7 @@
 					<li>議價簽約金額即為最後給付金額，以應用程式為單位。</li>
 					<li>給付金額時將依學務處<a href="http://140.115.183.185/ncu7221/index.php?option=com_attachments&task=download&id=301" target="_blank">國立中央大學學生工讀助學辦法 （104.01.01生效）</a>，依上限分月給付。</li>
 					<li>所有完成作品皆為開放原始碼，並放置在<a href="https://www.github.com/NCU-CC" target="_blank">github</a>上。</li>
-					<li>若提案人有違反簽訂合約內容之行為，本中心有權利取消該提案，並追訴提案人的違法行為。</li>
+					<li>若提案人有違反簽訂合約內容行為，本組有權利取消該提案，並追訴提案人的違法行為。</li>
 				</ol>
 				
 				<h5>提案範例</h5>
@@ -57,21 +62,73 @@
 				
 				<h5>已開發</h5>
 				<ul>
-					<li>
-						<a href="https://play.google.com/store/apps/details?id=tw.edu.ncu.cc.ncucourse" target="_blank">加退課/查詢已選課程</a>
-						developed by <em><a href="https://github.com/c910335" target="_blank">@c910335</a></em>.
+					<li itemscope itemtype="http://schema.org/SoftwareApplication">
+						<meta itemprop="operatingSystem" content="Android" />
+						<meta itemprop="applicationCategory" content="Education" />
+						<a href="https://play.google.com/store/apps/details?id=tw.edu.ncu.cc.ncucourse" target="_blank" itemprop="url">
+							<span itemprop="name">個人課表</span>
+						</a>
+						developed by
+						<em itemprop="creator" itemscope itemtype="http://schema.org/Person">
+							<a href="https://github.com/c910335" target="_blank" itemprop="url"><span itemprop="name">c910335</span></a>
+						</em>.
 					</li>
-					<li>
-						<a href="https://play.google.com/store/apps/details?id=com.da.ncudormmoitor.andr.client.activity" target="_blank">宿網監測</a>
-						developed by <em>@alexwu.hchs, @jinnim56395.</em>
+					<li itemscope itemtype="http://schema.org/SoftwareApplication">
+						<meta itemprop="operatingSystem" content="Android" />
+						<meta itemprop="applicationCategory" content="Monitor" />
+						<a href="https://play.google.com/store/apps/details?id=com.da.ncudormmoitor.andr.client.activity" target="_blank" itemprop="url">
+							<span itemprop="name">宿網流量監測</span>
+						</a>
+						developed by 
+						<em itemprop="creator" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name">alexwu.hchs</span>
+						</em>,
+						<em itemprop="creator" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name">jinnim56395</span>
+						</em>.
+			
 					</li>
-					<li>
-						<a href="https://play.google.com/store/apps/details?id=tw.edu.ncu.cc.ncubusdrawerver" target="_blank">公車時刻表</a>
-						developed by <em><a href="https://github.com/eexe1" target="_blank">@eexe1</a>, @justakiss511.</em>
+					<li itemscope itemtype="http://schema.org/SoftwareApplication">
+						<meta itemprop="operatingSystem" content="Android" />
+						<meta itemprop="applicationCategory" content="Traffic" />
+						<a href="https://play.google.com/store/apps/details?id=tw.edu.ncu.cc.ncubusdrawerver" target="_blank" itemprop="url">
+							<span itemprop="name">公車時刻表</span>
+						</a>
+						developed by 
+						<em itemprop="creator" itemscope itemtype="http://schema.org/Person">
+							<a href="https://github.com/eexe1" target="_blank" itemprop="url">
+								<span itemprop="name">eexe1</span>
+							</a>
+						</em>,
+						<em itemprop="creator" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name">justakiss511</span>
+						</em>.
 					</li>
-					<li>
-						<a href="https://play.google.com/store/apps/details?id=tw.edu.ncu.cc.ncumap" target="_blank">地圖導覽</a>
-						developed by <em><a href="https://github.com/c910335" target="_blank">@c910335</a></em>.
+					<li itemscope itemtype="http://schema.org/SoftwareApplication">
+						<meta itemprop="operatingSystem" content="Android" />
+						<meta itemprop="applicationCategory" content="Information" />
+						<a href="https://play.google.com/store/apps/details?id=tw.edu.ncu.cc.ncumap" target="_blank" itemprop="url">
+							<span itemprop="name">地圖導覽</span>
+						</a>
+						developed by 
+						<em itemprop="creator" itemscope itemtype="http://schema.org/Person">
+							<a href="https://github.com/c910335" target="_blank" itemprop="url">
+								<span itemprop="name">c910335</span>
+							</a>
+						</em>.
+					</li>
+					<li itemscope itemtype="http://schema.org/SoftwareApplication">
+						<meta itemprop="operatingSystem" content="Android" />
+						<meta itemprop="applicationCategory" content="Information" />
+						<a href="https://play.google.com/store/apps/details?id=evan.ncu.club" target="_blank" itemprop="url">
+							<span itemprop="name">學生社團活動</span>
+						</a>
+						developed by 
+						<em itemprop="creator" itemscope itemtype="http://schema.org/Person">
+							<a href="https://github.com/eexe1" target="_blank" itemprop="url">
+								<span itemprop="name">eexe1</span>
+							</a>
+						</em>.
 					</li>
 				</ul>
 			</div>
